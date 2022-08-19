@@ -1,0 +1,17 @@
+.sobre-ucede {
+    margin-top: 1rem;
+
+    .sobre-ucede-contenido {
+        .sobre-ucede__imagen {
+            background-image: url(../../../build/img/Entrada2.jpg);
+            height: 30rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .boton {
+            text-align: right;
+        }
+    }
+
+}
