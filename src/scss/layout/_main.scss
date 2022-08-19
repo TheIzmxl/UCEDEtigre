@@ -1,0 +1,40 @@
+.contenido-principal {
+    @include tablet {
+        @include grid(2, 4rem)
+    }
+
+    .noticias {
+        .entrada {
+            border-bottom: 1px solid $tercero;
+            margin-bottom: 2rem;
+
+            &:last-of-type {
+                border: none;
+                margin: 0;
+            }
+        }
+    }
+    .sidebar {
+        .mas-noticias{
+            list-style: none;
+            .widget-noticias {
+                border-bottom: 1px solid $primero;
+                margin-bottom: 2rem;
+                &:last-of-type {
+                    border: none;
+                    margin-bottom: 0;
+                }
+                .widget-imagen {
+                    height: 25rem;
+                    margin-top: 1rem;
+                    
+                }
+                .widget-noticias__label{
+                    font-family: $FuenteHeading;
+                    font-weight: $bold;
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}

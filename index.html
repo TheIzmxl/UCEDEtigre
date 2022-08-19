@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,15 @@
     <link rel="prefetch" href="nosotros.html" as="document">
 
     <!-- Preload -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="build/css/app.css">
 </head>
+
 <body>
     <header class="header">
         <div class="contenedor header__sombra">
@@ -36,15 +41,71 @@
     </header>
     <div class="contenedor contenido-principal">
         <main class="noticias">
-            <h3 class="centrar-texto titulo">Noticias</h3>
+            <h3 class="centrar-texto titulo">Lo ultimo en Tigre</h3>
 
-            <article>
-                <div class="entrada">
-                    
-                </div>
+            <article class="entrada">
+                    <div class="entrada__imagen">
+                        <picture>
+                            <source loading="lazy" srcset="build/img/Entrada2.webp" type="image/webp">
+                            <img src="build/img/Entrada2.jpg" alt="imagen noticia">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">Volvio la UCEDE</h4>
+                        <p>Nam eget auctor libero. Mauris porttitor pretium risus, ac tincidunt augue mattis a. Maecenas
+                            porta gravida mauris, vel dictum tortor gravida sed. Cras placerat nisi eu ultricies
+                            sagittis. Proin porttitor orci id nisl gravida, eget posuere elit aliquam. Aliquam eleifend
+                            elit vitae odio vestibulum, in facilisis eros porta. Aenean porttitor faucibus malesuada.
+                            Aenean egestas purus vitae ipsum convallis, sed tincidunt nisl cursus. Nunc accumsan non
+                            ante ac vehicula.</p>
+
+                        <a href="#" class="boton boton-primario">Seguir Leyendo</a>
+                    </div>
+            </article>
+            <article class="entrada">
+                    <div class="entrada__imagen">
+                        <picture>
+                            <source loading="lazy" srcset="build/img/Entrada3.webp" type="image/webp">
+                            <img src="build/img/Entrada3.jpg" alt="imagen noticia">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">Otra Noticia</h4>
+                        <p>Nam eget auctor libero. Mauris porttitor pretium risus, ac tincidunt augue mattis a. Maecenas
+                            porta gravida mauris, vel dictum tortor gravida sed. Cras placerat nisi eu ultricies
+                            sagittis. Proin porttitor orci id nisl gravida, eget posuere elit aliquam. Aliquam eleifend
+                            elit vitae odio vestibulum, in facilisis eros porta. Aenean porttitor faucibus malesuada.
+                            Aenean egestas purus vitae ipsum convallis, sed tincidunt nisl cursus. Nunc accumsan non
+                            ante ac vehicula.</p>
+
+                        <a href="#" class="boton boton-primario">Seguir Leyendo</a>
+                    </div>
             </article>
         </main>
+
+        <aside class="sidebar">
+            <h3>Más Noticias</h3>
+            <ul class="mas-noticias no-padding">
+                <li class="widget-noticias">
+                    <h4 class="no-margin">Nueva Noticia</h4>
+                    <img src="build/img/Entrada.jpg" alt="noticia" class="widget-imagen">
+                    <p class="widget-noticias__label">Nam eget auctor libero. Mauris porttitor pretium risus, ac tincidunt augue mattis a. Maecenas
+                        porta gravida mauris, vel dictum tortor gravida sed. Cras placerat nisi eu ultricies sagittis.
+                        Proin porttitor orci id nisl gravida, eget posuere elit aliquam.</p>
+                </li>
+                <li class="widget-noticias">
+                    <h4 class="no-margin">Nueva Noticia</h4>
+                    <img src="build/img/Entrada4.jpg" alt="noticia" class="widget-imagen">
+                    <p class="widget-noticias__label">Nam eget auctor libero. Mauris porttitor pretium risus, ac tincidunt augue mattis a. Maecenas
+                        porta gravida mauris, vel dictum tortor gravida sed. Cras placerat nisi eu ultricies sagittis.
+                        Proin porttitor orci id nisl gravida, eget posuere elit aliquam.</p>
+                </li>
+            </ul>
+            <a href="#" class="boton boton-secundario">Todas las Noticias</a>
+
+        </aside>
     </div>
-    
+
 </body>
+
 </html>

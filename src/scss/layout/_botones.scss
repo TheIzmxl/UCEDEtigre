@@ -1,0 +1,27 @@
+.boton {
+    display: block;
+    font-family: $FuenteHeading;
+    color: $cuarto;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    @include tablet{
+        display: inline-block;
+    }
+
+}
+.boton-primario {
+    background-color: $primero;
+    &:hover {
+        background-color: $tercero
+    }
+}
+.boton-secundario {
+    background-color: $segundo;
+    &:hover{
+        background-color: $primero;
+    }
+}
