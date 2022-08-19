@@ -1,0 +1,46 @@
+.header {
+    height: 50rem;
+    background-color: $primero;
+    text-align: center;
+    .barra {
+        padding-top: 0;
+
+        .logo-img {
+            height: 15rem;
+        }
+        @include tablet {
+            padding-top: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }   
+    }
+    .header__texto {
+        color: $cuarto;
+        margin-top: 5rem;
+
+        @include tablet {
+            margin-top: 10rem;
+        }
+
+    }
+}
+.navegacion {
+    margin-top: -3rem;
+    .navegacion__enlace {
+        display: block;
+        text-align: center;
+        color: $cuarto;
+        font-size: 1.8rem;
+
+        &:hover {
+            color: $tercero;
+        }
+    }
+    @include tablet {
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
