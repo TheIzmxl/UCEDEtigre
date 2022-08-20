@@ -1,0 +1,36 @@
+.footer {
+    color: $cuarto;
+    background-color: $primero;
+    text-align: center;
+    .barra {
+        padding-top: 0;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        .logo-img {
+            height: 15rem;
+        }
+
+        @include tablet {
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    h4{
+        color: $cuarto;
+    }
+    .redes {
+       display: flex;
+       justify-content: space-around;
+       .redes-iconos{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        a {
+            color: $cuarto;
+        }
+       }
+    }
+}
