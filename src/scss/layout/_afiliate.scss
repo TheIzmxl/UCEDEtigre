@@ -1,0 +1,6 @@
+.afiliate {
+    .afiliate-contenido{
+        margin-top: 10rem;
+        @include grid(2, 3rem)
+    }
+}

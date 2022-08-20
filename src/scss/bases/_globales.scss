@@ -1,35 +1,65 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1 rem = 10px */    
+    font-size: 62.5%;
+    /* 1 rem = 10px */
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
+
 body {
     font-family: $FuenteParrafos;
     font-size: 1.6rem;
     line-height: 2;
+    // /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#31eff9+0,eaf8ff+100&0.06+0,0.42+100 */
+    // background: -moz-linear-gradient(45deg, rgba(49, 239, 249, 0.06) 0%, rgba(234, 248, 255, 0.42) 100%);
+    // /* FF3.6-15 */
+    // background: -webkit-linear-gradient(45deg, rgba(49, 239, 249, 0.06) 0%, rgba(234, 248, 255, 0.42) 100%);
+    // /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(45deg, rgba(49, 239, 249, 0.06) 0%, rgba(234, 248, 255, 0.42) 100%);
+    // /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0f31eff9', endColorstr='#6beaf8ff', GradientType=1);
+    // /* IE6-9 fallback on horizontal gradient */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#31eff9+0,eaf8ff+50,eaf8ff+100&0.06+0,0.18+50,0.42+100 */
+background: -moz-linear-gradient(45deg,  rgba(49,239,249,0.06) 0%, rgba(234,248,255,0.18) 50%, rgba(234,248,255,0.42) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(49,239,249,0.06) 0%,rgba(234,248,255,0.18) 50%,rgba(234,248,255,0.42) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(49,239,249,0.06) 0%,rgba(234,248,255,0.18) 50%,rgba(234,248,255,0.42) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f31eff9', endColorstr='#6beaf8ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 a {
     text-decoration: none;
 }
-h1, h2, h3, h4 {
+
+h1,
+h2,
+h3,
+h4 {
     font-family: $FuenteHeading;
     line-height: 1.2;
+    color: $segundo;
 }
+
 h1 {
     font-size: 4.8rem;
 }
+
 h2 {
     font-size: 4rem;
 }
+
 h3 {
     font-size: 3.2rem;
 }
+
 h4 {
     font-size: 2.8rem;
 }
+
 img {
     max-width: 100%;
 }

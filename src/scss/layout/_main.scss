@@ -30,9 +30,13 @@
                     
                 }
                 .widget-noticias__label{
-                    font-family: $FuenteParrafos;
+                    font-family: $FuenteHeading;
                     font-weight: $bold;
-                    font-size: 1.7rem;
+                    font-size: 2rem;
+
+                    .widget-noticias__info {
+                        font-weight: 400;
+                    }
                 }
             }
         }
